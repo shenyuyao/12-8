@@ -1,0 +1,25 @@
+<% include ./includes/header %>
+<div class="banner">
+	<img src="/images/3.jpg" alt="" />
+</div>
+<div class="font">
+	<div class="font-auto">
+		<p class="p1">Size：<span>XS</span> S M L <span>XL</sapn></p>
+			<p class="p2">Price：<span>$25</span> $50 $75 <span>$100</sapn></p>
+		</div>
+	</div>
+	<div class="cont">
+		<div class="cont-auto">
+			<% for (var i=0;i<movies.length;i++){ %>
+				<div class="cion">
+					<a class="btn" href="/detail/<%= movies[i].id %>">
+						<img src="<%= movies[i].poster %>" alt="" />
+					</a>
+					<h3><%= movies[i].title %></h3>
+					<p>$75.00</p>
+				</div>
+			<% } %>
+		</div>
+	</div>
+</body>
+</html>
